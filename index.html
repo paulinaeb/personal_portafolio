@@ -19,9 +19,9 @@
     <h2 class="subtitle">Developer | Computer Science Engineering Student | Bilingual</h2>
     <nav>
       <ul class="navigation">
-      <li class="nav-item"><a href="/acerca-de">Acerca de</a></li>
-      <li class="nav-item"><a href="/proyectos">Mis Proyectos</a></li>
-      <li class="nav-item"><a href="/contacto">Contacto</a></li>
+      <li class="nav-item"><a href="#main">Acerca de</a></li>
+      <li class="nav-item"><a href="#proyectos">Mis Proyectos</a></li>
+      <li class="nav-item"><a href="#contacto">Contacto</a></li>
     </ul>
     </nav>
   </header>
@@ -60,39 +60,43 @@
       </ul>
     </section>
 
-    <section>
+    <section id="proyectos">
       <h2 class="header">Mis proyectos</h2>
     <div class="carousel">
-      <div class="arrow arrow-left" aria-label="backward button"></div>
+      <button class="arrow arrow-left" aria-label="backward button"></button>
       <div class="window">
         <ul class="project-container">
-          <li><button><img src="images/project1.png" class="project project1" alt="Primer Proyecto"/></button></li>
-          <li><button><img src="images/project2.png" class="project project2"  alt="Segundo Proyecto"/></button></li>
-          <li><button><img src="images/project3.png" class="project project3"  alt="Tercer Proyecto"/></button></li>
-          <li aria-hidden="true"><button><img src="images/project4.png" class="project project4"  alt="Cuarto Proyecto"/></button></li>
-          <li aria-hidden="true"><button><img src="images/project5.png" class="project project5"  alt="Quinto Proyecto"/></button></li>
+          <li class="project1-container"><button class="project1 project"><img src="images/project1.png" class="project-img" alt="Primer Proyecto"/></button></li>
+          <li class="project2-container"><button class="project2 project"><img src="images/project2.png" class="project-img"  alt="Segundo Proyecto"/></button></li>
+          <li class="project3-container"><button class="project3 project"><img src="images/project3.png" class="project-img"  alt="Tercer Proyecto"/></button></li>
+          <li class="project4-container" aria-hidden="true"><button class="project4 project" tabindex="-1"><img src="images/project4.png" class="project-img"  alt="Cuarto Proyecto"/></button></li>
+          <li class="project5-container" aria-hidden="true"><button class="project5 project" tabindex="-1"><img src="images/project5.png" class="project-img"  alt="Quinto Proyecto"/></button></li>
         </ul>
       </div>
-      <div class="arrow arrow-right" aria-label="forward button"></div>
+      <button class="arrow arrow-right" aria-label="forward button"></button>
     </div>
   </section>
   </main>
 
-    <footer class="contact-section">
+    <footer class="contact-section" id="contacto">
       <h2 class="header">Contacto</h2>
+      <p class="intro">Puedes usar el formulario siguiente para mandarme un mensaje!</p><br/>
       <form class="form-container">
-        <p class="form-label">Nombre</p><input type="text"  aria-label="nombre"/> <br />
-        <p class="form-label">Correo</p><input type="text" aria-label="correo"/> <br />
-        <div class="message-input">Mensaje<input type="text"/> <br /></div>
+        <label class="form-label">Nombre</label><input id="nombre" type="text"  aria-label="nombre"/> 
+        <span id="name-error"></span>
+        <br/>
+        <label class="form-label">Correo</label><input type="text" aria-label="correo"/> <br />
+        <label class="message-input">Mensaje<input type="text"/> <br /></label>
         <button class="send-button">Enviar</button>
       </form>
     </footer>
 
-    <div class="notification">El formulario fue enviado sin errores</div>
+    <div class="notification" aria-live="assertive"></div>
     <div class="modal-container">
       <div class="modal">
-        Ejemplo de un proyecto mio
-        <div class="modal-project-image"></div>
+       <h2 class="header" id="modal-header" tabindex="0">Project preview</h2>
+        <img id="img-modal" src="images/project1.png" class="modal-project-image" alt="screenshot del proyecto"/>
+        <button class="modal-button">Cerrar</button>
       </div>
     </div>
 

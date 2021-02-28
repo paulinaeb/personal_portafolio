@@ -57,6 +57,7 @@ body, header, section {
   margin: 16px 0 8px;
   padding: 8px;
   text-decoration: none;
+  outline: 2px solid var(--gris-oscuro);
 }
 
 .header {
@@ -107,11 +108,19 @@ nav{
   width: 33%;
 }
 
-.nav-item:hover, .nav-item:hover a
- {
+.nav-item:hover, .nav-item:hover a{
   background-color: var(--verde);
   cursor:pointer;
-  color: var(--gris-oscuro)
+  color: var(--gris-oscuro);
+}
+
+.nav-item:focus-within{
+  background-color:var(--verde) ;
+}
+
+.nav-item a:focus{
+  outline: none;
+  color:var(--gris-oscuro);
 }
 
 .intro {
@@ -125,7 +134,6 @@ nav{
   display: flex;
   justify-content: space-around;
   margin: 32px auto 0;
-  width: 20%;
 }
 
 .social-media li a{
@@ -134,8 +142,17 @@ nav{
   color:var(--blanco);
   font-family: var(--secondary-font);
   text-decoration: none;
-  padding-right: 28px;
-  padding-left: 28px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.social-media li a:focus{
+  outline: none;
+}
+
+.social-media li:focus-within{
+  outline: 3px solid var(--verde);
+  padding: 2px;
 }
 
 .social-link-text {
@@ -151,7 +168,8 @@ nav{
 
 .window {
   overflow: hidden;
-  width: 805px;
+  width: 815px;
+  padding: 8px;
 }
 
 .project-container {
@@ -167,9 +185,14 @@ nav{
 .project-container button{
   background: none;
   border:none;
+  padding: 0;
 }
 
-.project {
+.project-container button:focus-within{
+  outline: 3px solid var(--verde);
+}
+
+.project-img {
   border-radius: 5px;
   border: 2px solid #000;
   display: inline-block;
@@ -207,6 +230,10 @@ nav{
   border-radius: 50%;
 }
 
+.arrow:focus{
+  outline: 3px solid var(--verde);
+}
+
 .contact-section {
   align-items: center;
   background-color: var(--gris-oscuro);
@@ -227,19 +254,24 @@ nav{
 }
 
 .form-label, .message-input{
-  color:var(--blanco);
+  color:var(--verde);
+  font-family: var(--secondary-font);
 }
 
 input {
-  outline: none;
   width: 100%;
 }
 
-.send-button {
+input:focus{
+  outline: 2px solid var(--verde);
+  padding: 8px;
+}
+
+.send-button, .modal-button {
   align-items: center;
   background-color: var(--verde);
   border-radius: 5px;
-  color: white;
+  color:var(--gris-oscuro);
   font-family: var(--secondary-font);
   display: flex;
   height: 50px;
@@ -248,6 +280,12 @@ input {
   width: 150px;
   margin-left: auto;
   font-size: 16px;
+  cursor:pointer;
+}
+
+.send-button:focus, .modal-button:focus{
+  border: 2px solid var(--gris-oscuro);
+  outline: 1px solid var(--blanco);
 }
 
 .notification {
@@ -255,7 +293,7 @@ input {
   background-color: var(--verde);
   border-radius: 5px;
   box-shadow: 8px 16px 32px 0px var(--shadow);
-  color: var(--blanco);
+  color: var(--gris-oscuro);
   display: none;
   font-family: var(--secondary-font);
   height: 50px;
@@ -276,6 +314,11 @@ input {
   width: 100vw;
 }
 
+#modal-header:focus{
+  outline: 1px solid var(--blanco);
+  padding: 10px;
+}
+
 .modal {
   align-items: center;
   background-color: var(--gris-oscuro);
@@ -283,11 +326,12 @@ input {
   border: 2px solid #000;
   display: flex;
   flex-direction: column;
-  height: 700px;
+  height: 550px;
   justify-content: center;
   position: fixed;
-  top: 15%;
-  width: 700px;
+  top: 5%;
+  width: 600px;
+  padding: 56px; 
 }
 
 .modal-project-image {
