@@ -1,9 +1,7 @@
 window.onload = () => {
   document.querySelector(".arrow-right").addEventListener("click", clickRight);
   document.querySelector(".arrow-left").addEventListener("click", clickLeft);
-  document
-    .querySelector(".send-button")
-    .addEventListener("click", e => validateForm(e));
+  document.querySelector(".send-button").addEventListener("click", e=> validateForm(e));
   document.querySelectorAll(".project").forEach(element => {
     element.addEventListener("click", e => openModal(e));
   });
@@ -73,9 +71,11 @@ function clickLeft() {
 function validateForm(e){
   e.preventDefault();
   const nameField=document.getElementById("nombre");
-  if (nameField.value===""){
+  const correoField=document.getElementById("correo");
+  const messageField=document.getElementById("mensaje");
+  if ((nameField.value==="") || (correoField.value==="") || (messageField.value==="")){
   //document.getElementById("name-error").innerHTML="Para enviar el formulario requerimos su nombre!";
-  alert("Para enviar el formulario requerimos su nombre!");
+  alert("Para enviar el formulario requerimos todos los campos llenos, verifica e intenta nuevamente");
   }
   else {
     showNotification();

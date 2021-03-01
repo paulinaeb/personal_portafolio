@@ -127,13 +127,14 @@ nav{
   margin: 24px 196px 0;
   font-family: var(--secondary-font);
   color: var(--blanco);
+  text-align: justify;
 }
 
 .social-media {
   align-items: center;
   display: flex;
   justify-content: space-around;
-  margin: 32px auto 0;
+  margin: 30px auto 37px;
 }
 
 .social-media li a{
