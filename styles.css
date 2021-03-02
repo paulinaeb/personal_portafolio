@@ -161,6 +161,22 @@ nav{
   padding-left: 8px;
 }
 
+.skill-container
+{
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.conocimientos{
+  color: var(--blanco);
+  padding-right: 8px;
+  padding-left: 8px;
+  padding-top: 10px;
+  font-family: var(--secondary-font);
+  text-align: justify;
+}
+
 .carousel {
   align-items: center;
   display: flex;
