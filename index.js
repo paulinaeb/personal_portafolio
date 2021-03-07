@@ -106,7 +106,6 @@ function openModal(e) {
   //img contiene la ruta de la imagen 
   let img= e.srcElement.currentSrc;
   document.querySelector("#img-modal").setAttribute("src",img);
-  document.getElementById('modal-header').focus();
 }
 
 /** Esta funcion se llama para cerrar el modal */
