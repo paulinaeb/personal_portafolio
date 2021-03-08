@@ -1,12 +1,5 @@
 @media (max-width: 750px) {
 
-    .products{
-      display: inherit;
-      height: auto;
-    }
-    .product{
-      margin-top: auto;
-    }
     .subtitle, .navigation{
       display: inherit;
       text-align: center;
@@ -26,6 +19,10 @@
     .skill-container{
         display: inherit;
         padding: 7px;
+    }
+
+    #main{
+      margin-left: 40px;
     }
   
   }
