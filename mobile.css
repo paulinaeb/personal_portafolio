@@ -1,0 +1,32 @@
+@media (max-width: 750px) {
+
+    .products{
+      display: inherit;
+      height: auto;
+    }
+    .product{
+      margin-top: auto;
+    }
+    .subtitle, .navigation{
+      display: inherit;
+      text-align: center;
+    }
+
+    body, html{
+        padding: 40px;
+    }
+
+    .nav-item{
+        padding: 35px;
+        width: 50%;
+        height: 20px;
+        text-align: center;
+    }
+  
+    .skill-container{
+        display: inherit;
+        padding: 7px;
+    }
+  
+  }
+  

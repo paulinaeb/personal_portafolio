@@ -71,6 +71,7 @@ body, header, section {
   color: var(--verde);
   font-family: var(--secondary-font);
   font-size: 24px;
+  justify-content: center;
 }
 
 .header-img {
