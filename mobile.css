@@ -30,5 +30,9 @@
     .carousel{
       width: 95%;
     }
+
+    .contact-section, .send-button,.social-media{
+      width: 80%;
+    }
   }
   
