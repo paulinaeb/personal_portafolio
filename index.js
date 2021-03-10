@@ -87,6 +87,7 @@ function showNotification() {
   document.querySelector('.form-container').reset();
  document.querySelector(".notification").style.display = "flex";
  document.querySelector(".notification").innerHTML="El formulario fue enviado sin errores"; 
+ window.open('mailto:pdespejo18@gmail.com');
  setTimeout(function() {
     document.querySelector(".notification").style.display = "none";
   }, 3000);
