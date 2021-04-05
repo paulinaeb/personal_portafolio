@@ -45,7 +45,13 @@ function openModal(e) {
   document.querySelector(".modal-container").style.display = "flex";
   //img contiene la ruta de la imagen 
   let img= e.srcElement.currentSrc;
-  //let title = e.
+  let title = e.srcElement.id;
+  if (title=='pro1'){
+    document.getElementById("modal-header").innerHTML="Variedades: tienda online";
+  }
+  if (title=='pro2'){
+    document.getElementById("modal-header").innerHTML="Filos Smart: cuestionarios";
+  }
   document.querySelector("#img-modal").setAttribute("src",img);
 }
 
