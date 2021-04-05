@@ -11,10 +11,11 @@
 
     .nav-item{
         padding: 5%;
-        width: 70%;
+        width: 150px;
         text-align: center;
         align-items: center;
         margin-left: 15%;
+        margin-bottom: 5px;
     }
   
     .skill-container{
@@ -33,6 +34,10 @@
 
     .contact-section, .send-button,.social-media{
       width: 80%;
+    }
+
+    .social-media{
+      margin-left: 20px;
     }
   }
   
