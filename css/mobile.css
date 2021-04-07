@@ -29,15 +29,47 @@
     }
   
     .carousel{
+      width: 90%;
+    }
+
+    .project-container li{
+      display: inherit;
+     
+    }
+
+    .project-container{
       width: 95%;
     }
 
-    .contact-section, .send-button,.social-media{
+    #modal-header {
+      font-size: 18px;
+  }
+
+    .modal {
+      height: 35%;
+      width: 70%;
+      padding: 30px;
+      top: 30%;
+      padding-bottom: 1px;
+    }
+    
+
+    .contact-section, .social-media{
       width: 80%;
     }
 
     .social-media{
       margin-left: 20px;
+    }
+
+    .form-container{
+      width: 50%;
+    }
+
+    footer div{
+    display: list-item;
+    text-align: center;
+    list-style: none;
     }
   }
   
